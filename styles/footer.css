@@ -1,0 +1,122 @@
+.footer {
+  height: 186px;
+  background-color: #f5f5f5;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .footerLeft {
+  /*             background: red; */
+  padding-top: 68px;
+}
+.footer .container .footerLeft .footerEmail {
+  color: #7a7a7a;
+  font-family: 'Gotham_Rounded', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  margin-bottom: 28px;
+}
+.footer .container .footerLeft .footerEmail i {
+  color: #4acaff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 13px;
+}
+.footer .container .footerLeft .copyright {
+  color: #a6a5a5;
+  font-family: 'Gotham_Rounded_Book', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer .container .footerLeft .copyright span {
+  font-family: 'Gotham_Rounded', sans-serif;
+  color: #7a7a7a;
+  font-weight: 500;
+}
+.footer .container .footerRight {
+  /*             background: blue; */
+  display: flex;
+  justify-content: space-between;
+  padding-top: 105px;
+}
+.footer .container .footerRight .twitterWrapper {
+  margin-right: 20px;
+}
+.footer .container .footerRight .twitterWrapper .twitter .btnTwitter {
+  width: 53px;
+  height: 18px;
+  border: 1px solid #a4cce5;
+  background-image: linear-gradient(to top, #d5e6ef 0%, #ffffff 100%);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.61);
+  color: #186487;
+  font-family: 'Helvetica_Neue_Medium', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 9px;
+}
+.footer .container .footerRight .twitterWrapper .twitter .meterTwitter {
+  width: 32px;
+  height: 18px;
+  border: 1px solid #cee3f0;
+  background-color: #ffffff;
+  color: #2a7090;
+  font-family: 'Helvetica_Neue_Medium', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.footer .container .footerRight .twitterWrapper .twitter .meterTwitter:after {
+  content: '';
+  display: block;
+  /*                             background-color: red; */
+  position: absolute;
+  left: 0;
+  top: 4px;
+  border-top: 4px solid transparent;
+  border-right: 6px solid #ffffff;
+  border-bottom: 4px solid transparent;
+  transform: translateX(-100%);
+}
+.footer .container .footerRight .facebookWrapper .facebook .btnFace {
+  width: 46px;
+  height: 18px;
+  border: 1px solid #cad4e7;
+  background-color: #eceef5;
+  color: #3b5998;
+  font-family: 'Lucida_Grande', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.21px;
+  margin-right: 9px;
+}
+.footer .container .footerRight .facebookWrapper .facebook .meterFacebook {
+  text-align: center;
+  width: 25px;
+  height: 18px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Lucida_Grande', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: -0.11px;
+  display: inline-block;
+  position: relative;
+}
+.footer .container .footerRight .facebookWrapper .facebook .meterFacebook:after {
+  content: '';
+  display: block;
+  /*                             background-color: red; */
+  position: absolute;
+  left: 0;
+  top: 4px;
+  border-top: 4px solid transparent;
+  border-right: 6px solid #ffffff;
+  border-bottom: 4px solid transparent;
+  transform: translateX(-100%);
+}

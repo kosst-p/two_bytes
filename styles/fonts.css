@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Gotham_Rounded';
+  src        : url('../fonts/Gotham_Rounded.otf');
+}
+@font-face {
+  font-family: 'Gotham_Rounded_Bold';
+  src        : url('../fonts/Gotham_Rounded_Bold.otf');
+}
+@font-face {
+  font-family: 'Gotham_Rounded_Book';
+  src        : url('../fonts/Gotham_Rounded_Book.otf');
+}
+@font-face {
+  font-family: 'Gotham_Rounded_Book_Italic';
+  src        : url('../fonts/Gotham_Rounded_Book_Italic.otf');
+}
+@font-face {
+  font-family: 'Helvetica_Bold';
+  src        : url('../fonts/Helvetica_Bold.otf');
+}
+@font-face {
+  font-family: 'Helvetica_Neue_Medium';
+  src        : url('../fonts/Helvetica_Neue_Medium.otf');
+}
+@font-face {
+  font-family: 'Lucida_Grande';
+  src        : url('../fonts/Lucida_Grande.ttf');
+}
