@@ -1,15 +1,24 @@
 .content_about{
-    height: 603px;
+    height: 650px;
 /*     background-color: #696666; */
+@media (min-width: 960px){
+    height: 603px;
+}
     .container{
-        padding-top: 115px;
+        padding-top: 50px;
+        @media (min-width: 960px){
+            padding-top: 115px;
+        }
         .leaders{
             color: #585858;
             font-family: 'Gotham_Rounded_Book_Italic', sans-serif;
             font-size: 30px;
             font-weight: 400;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 47px;
+            @media (min-width: 960px){
+                margin-bottom: 30px;
+            }
         }
         .contentTitle{
             color: #585858;
@@ -23,8 +32,13 @@
             width: 138px;
             height: 5px;
             background-color: #4acaff;
-            margin-bottom: 55px;
-            margin-left: 410px;
+            margin-bottom: 47px;
+            margin-left: auto;
+            margin-right: auto;
+            @media (min-width: 960px){
+                margin-left: 410px;
+                margin-bottom: 55px;
+            }
         }
         .contentText{
             color: #585858;
@@ -32,7 +46,10 @@
             font-size: 18px;
             font-weight: 400;
             text-align: center;
-            margin-bottom: 79px;
+            margin-bottom: 47px;
+            @media (min-width: 960px){
+                margin-bottom: 79px;
+            }
         }
         .aboutBtn{
             display: block;
@@ -47,7 +64,11 @@
             text-transform: uppercase;
             text-decoration: none;
             padding: 20px 24px 24px 22px;
-            margin-left: 332px;
+            margin-left: auto;
+            margin-right: auto;
+            @media (min-width: 960px){
+                margin-left: 332px;
+            }
         }
     }
 }

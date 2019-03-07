@@ -1,8 +1,14 @@
 .content_sub{
-    height: 450px;
+    height: 300px;
     background-color: #131c25;
+    @media (min-width: 960px){
+        height: 450px;
+    }
     .container{
-        padding-top:  162px;
+        padding-top:  80px;
+        @media (min-width: 960px){
+            padding-top:  162px;
+        }
         .sub{
             .subLabel{
             color: #ffffff;
@@ -13,12 +19,17 @@
             margin-bottom: 36px;
             }
             .emailWrapper{
-                width: 361px;
+                width: 280px;
                 height: 60px;
                 position: relative;
-                margin-left: 300px;
-                .emailPlace{
+                margin-left: auto;
+                margin-right: auto;
+                @media (min-width: 960px){
                     width: 361px;
+                    margin-left: 300px;
+                }
+                .emailPlace{
+                    width: 280px;
                     height: 51px;
                     border: 2px solid #4acaff;
                     border-radius: 10px;
@@ -29,6 +40,10 @@
                     font-weight: 400;
                     line-height: 25px;
                     padding: 20px 0 19px 21px;
+                    @media (min-width: 960px){
+                        width: 361px;
+                        
+                    }
                 }
                 .sendBtn{
                     position: absolute;

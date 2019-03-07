@@ -1,17 +1,32 @@
 .header {
-  /* width: 100%; */
-  height: 853px;
+  width: 100%;
+  height: 660px;
   background: url(../img/header_bg.png) center center;
   background-size: cover;
 }
+@media (min-width: 960px) {
+  .header {
+    height: 853px;
+  }
+}
 .header .container {
-  padding-top: 88px;
+  padding-top: 50px;
+}
+@media (min-width: 960px) {
+  .header .container {
+    padding-top: 88px;
+  }
 }
 .header .container .navbarWrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 18px;
-  margin-bottom: 230px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+@media (min-width: 960px) {
+  .header .container .navbarWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 230px;
+  }
 }
 .header .container .navbarWrapper .logo {
   color: #ffffff;
@@ -19,6 +34,9 @@
   font-family: 'Gotham_Rounded_Book', sans-serif;
   font-size: 31px;
   line-height: 19.39px;
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
 }
 .header .container .navbarWrapper .logo:hover {
   font-family: 'Gotham_Rounded_Bold', sans-serif;
@@ -37,48 +55,82 @@
   line-height: 19.39px;
   letter-spacing: 10.2px;
 }
+@media (min-width: 960px) {
+  .header .container .navbarWrapper .logo {
+    display: inline;
+    text-align: start;
+    margin-bottom: 0;
+  }
+}
 .header .container .navbarWrapper .navbar {
-  display: flex;
   list-style: none;
   font-family: 'Gotham_Rounded', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 25px;
   text-transform: uppercase;
-}
-.header .container .navbarWrapper .navbar li {
-  margin-right: 27px;
-}
-.header .container .navbarWrapper .navbar li:hover {
-  border-top: 4px solid #4acaff;
-}
-.header .container .navbarWrapper .navbar li:last-child {
-  margin-right: 0;
+  text-align: center;
 }
 .header .container .navbarWrapper .navbar li a {
   color: #ffffff;
   text-decoration: none;
 }
+@media (min-width: 576px) {
+  .header .container .navbarWrapper .navbar li {
+    margin-right: 27px;
+  }
+  .header .container .navbarWrapper .navbar li:hover {
+    border-top: 4px solid #4acaff;
+  }
+  .header .container .navbarWrapper .navbar li:last-child {
+    margin-right: 0;
+  }
+}
+@media (min-width: 576px) {
+  .header .container .navbarWrapper .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .header .container .headerText {
   color: #ffffff;
   font-family: 'Gotham_Rounded_Book_Italic', sans-serif;
-  font-size: 55px;
+  font-size: 40px;
   font-weight: 400;
   letter-spacing: -2.75px;
+  text-align: center;
+}
+@media (min-width: 960px) {
+  .header .container .headerText {
+    font-size: 55px;
+  }
 }
 .header .container .formPlace .placeSearch {
-  width: 737px;
+  width: 100%;
   height: 50px;
   background-color: #ffffff;
   padding: 18px 0 18px 20px;
   outline: none;
   border: none;
   border-bottom: 4px solid #e2e2e2;
-  margin-right: 79px;
   font-family: 'Gotham_Rounded_Book_Italic', sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
-  margin-bottom: 29px;
+  margin-bottom: 10px;
+}
+@media (min-width: 576px) and (max-width: 959px) {
+  .header .container .formPlace .placeSearch {
+    margin-bottom: 42px;
+  }
+}
+@media (min-width: 960px) {
+  .header .container .formPlace .placeSearch {
+    width: 737px;
+    margin-right: 79px;
+    font-size: 18px;
+    margin-bottom: 29px;
+  }
 }
 .header .container .formPlace .btnSearch {
   width: 140px;
@@ -92,6 +144,10 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
 }
 .header .container .formPlace .btnSearch i {
   font-size: 15px;
@@ -100,10 +156,29 @@
   background-color: #ffffff;
   color: #4acaff;
 }
-.header .container .formPlace .checkBox {
+@media (min-width: 576px) and (max-width: 959px) {
+  .header .container .formPlace .btnSearch {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 960px) {
+  .header .container .formPlace .btnSearch {
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+.header .container .formPlace .checkBoxWrapper {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.header .container .formPlace .checkBoxWrapper .checkAll {
+  display: inline-block;
+}
+.header .container .formPlace .checkBoxWrapper .checkAll .checkBox {
   margin-right: 14px;
 }
-.header .container .formPlace .labelTime {
+.header .container .formPlace .checkBoxWrapper .checkAll .labelTime {
   margin-right: 32px;
   color: #ffffff;
   font-family: 'Gotham_Rounded_Book_Italic', sans-serif;
@@ -111,20 +186,39 @@
   font-weight: 400;
   line-height: 25px;
 }
-.header .container .formPlace .labelWork {
-  margin-right: 142px;
+.header .container .formPlace .checkBoxWrapper .checkAll .labelWork {
   color: #ffffff;
   font-family: 'Gotham_Rounded_Book_Italic', sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 25px;
 }
+@media (min-width: 960px) {
+  .header .container .formPlace .checkBoxWrapper .checkAll .labelWork {
+    margin-right: 142px;
+  }
+}
+@media (min-width: 576px) and (max-width: 959px) {
+  .header .container .formPlace .checkBoxWrapper {
+    margin-right: 100px;
+  }
+}
+@media (min-width: 960px) {
+  .header .container .formPlace .checkBoxWrapper {
+    margin-bottom: 0;
+  }
+}
 .header .container .formPlace .yourLocation {
-  width: 247px;
+  width: 250px;
   color: #c7c7c7;
   font-family: 'Gotham_Rounded_Book_Italic', sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 25px;
   padding: 13px 0 13px 17px;
+}
+@media (min-width: 960px) {
+  .header .container .formPlace .yourLocation {
+    width: 247px;
+  }
 }
